@@ -1,10 +1,8 @@
 PragmaticPageGenerator::Application.routes.draw do
-  
-  root :to => 'pages#claudia'
 
-  resources :pages do
-    get 'claudia', :on => :collection
-  end
+  root to: 'pages#show'
+
+  resources :pages
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
