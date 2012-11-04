@@ -35,10 +35,18 @@ end
 group :test, :development do
   gem 'fabrication'
   gem 'rspec-rails', "~> 2.6"
-  gem 'rb-inotify', '~> 0.8.8'
-  #gem 'growl' if /darwin/ =~ RUBY_PLATFORM
   gem 'pry-rails'
 end
+
+group :linux do
+  gem 'rb-inotify', '~> 0.8.8'
+end
+
+group :darwin do
+  gem 'rb-fsevent', require: false
+  gem 'growl'
+end
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
