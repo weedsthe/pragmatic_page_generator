@@ -36,6 +36,8 @@ group :test, :development do
   gem 'fabrication'
   gem 'rspec-rails', "~> 2.6"
   gem 'pry-rails'
+  gem 'pry-stack_explorer'
+  gem 'pry-debugger'
 end
 
 group :linux do
