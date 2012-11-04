@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  src: url('fonts/OpenSans-Regular.ttf')
+  format('truetype')
+}
+
+@font-face {
+  font-family: 'Walkway';
+  src: url('fonts/Walkway_Black.ttf')
+  format('truetype')
+}
