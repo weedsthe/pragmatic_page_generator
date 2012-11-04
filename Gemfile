@@ -22,6 +22,21 @@ end
 
 gem 'jquery-rails'
 
+group :development do
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'guard-livereload'
+  gem 'fuubar', :git => 'git://github.com/jeffkreeftmeijer/fuubar.git'
+end
+
+group :test, :development do
+  gem 'fabrication'
+  gem 'rspec-rails', "~> 2.6"
+  gem 'rb-inotify', '~> 0.8.8'
+  #gem 'growl' if /darwin/ =~ RUBY_PLATFORM
+  gem 'pry-rails'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
