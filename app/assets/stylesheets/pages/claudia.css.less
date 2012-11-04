@@ -34,8 +34,28 @@ body{
 }
 
 .claudia {
-  .navbar li {
-    .font (@headerFont);
+  .navbar {
+    .background (rgba(255,255,255,0.5));
+  }  
+  .navbar-inner {
+    .background (rgba(255,255,255,0.5));
+    .rounded (0px);
+    background-image:none;
+    li {
+      .font (@headerFont);
+      a:hover {
+        color:gray;
+      }
+    }
+  }
+  aside {
+    .background (rgba(255, 255, 255, 0.65));
+    .border (rgba(122, 112, 112, 0.53));
+    .font ('Open Sans');
+    .rounded (6px);
+    height: 200px;
+    margin-left:16px;
+    padding:12px;
   }
 
    height: inherit;
