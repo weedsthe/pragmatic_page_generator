@@ -1,0 +1,49 @@
+// Typography:
+
+.font (@font: 'sans-serif', @space: 0px) {
+  font-family: @font, Arial, sans-serif;
+  letter-spacing:@space;
+}
+
+.text-shadow (@color: #fff) {
+  text-shadow: 1px 1px 1px @color;
+}
+
+// Visual:
+
+.rounded (@radius: 4px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.border (@color: #cdcdcd) {
+  border:1px solid @color;
+}
+
+.background (@color: #f5f5f5) {
+  background-color: @color;
+}
+
+.linear-gradient (@base: #f5f5f5, @target: #000) {
+  background-color: @base;
+  background-image:    -moz-linear-gradient(@base, @target);
+  background-image: -webkit-linear-gradient(@base, @target);
+  background-image: linear-gradient(@base, @target);
+}
+
+.diagonal-gradient (@angle: 45deg, @base: #f5f5f5, @target: #000) {
+  background-color: @base;  
+  background-image:    -moz-linear-gradient(@angle, @base, @target);
+  background-image: -webkit-linear-gradient(@angle, @base, @target);
+  background-image: linear-gradient(@angle, @base, @target);
+}
+
+
+//Layout
+
+.box-sizing {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;   
+  box-sizing: border-box; 
+}
