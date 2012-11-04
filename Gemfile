@@ -38,6 +38,8 @@ group :test, :development do
   gem 'rb-inotify', '~> 0.8.8'
   #gem 'growl' if /darwin/ =~ RUBY_PLATFORM
   gem 'pry-rails'
+  gem 'pry-stack_explorer'
+  gem 'pry-debugger'
 end
 
 # To use ActiveModel has_secure_password
