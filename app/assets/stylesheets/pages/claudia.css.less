@@ -42,7 +42,11 @@ body{
     .rounded (0px);
     background-image: none;
     li {
-      .font (@headerFont);
+      a {
+        .font (@headerFont);
+        text-shadow: none;
+        font-size: 18px;
+      }
       a:hover {
         color: gray;
       }
@@ -52,10 +56,11 @@ body{
     .background (rgba(255, 255, 255, 0.75));
     .border (rgba(122, 112, 112, 0.55));
     .font ('Open Sans');
-    .rounded (6px);
+    .rounded (12px 24px);
     height: 200px;
     margin-left: 16px;
     padding: 12px;
+    box-shadow:-1px -1px 2px gray;
   }
 
    height: inherit;
