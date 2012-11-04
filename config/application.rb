@@ -58,5 +58,18 @@ module PragmaticPageGenerator
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.generators do |g|
+      g.test_framework  :rspec
+      g.view_specs false
+      g.helper_specs false
+      g.template_engine :haml
+      g.stylesheet_engine :less
+      g.stylesheets = false
+      g.javascripts = false
+      g.helper = false
+    end
+
+
   end
 end
